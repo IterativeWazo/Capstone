@@ -1,25 +1,31 @@
 pragma solidity >=0.4.21 <0.6.0;
 
 // TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
-
+import "./Verifier.sol";
+import "./ERC721Mintable.sol";
 
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
+contract SolnSquareVerifier is RealStateOwnershipToken{
 
-
+ Verifier verifierContract;
 
 // TODO define a solutions struct that can hold an index & an address
-
+   struct Solution {
+        uint index;
+        address resolver;
+    }
 
 // TODO define an array of the above struct
+ Solution[] private solutions;
 
 
 // TODO define a mapping to store unique solutions submitted
-
+mapping(bytes32 => Solution) private storeUniqueSolutions;
 
 
 // TODO Create an event to emit when a solution is added
-
+event addedSolution(uint index, address resolver);
 
 
 // TODO Create a function to add the solutions to the array and emit the event
@@ -30,7 +36,7 @@ pragma solidity >=0.4.21 <0.6.0;
 //  - make sure the solution is unique (has not been used before)
 //  - make sure you handle metadata as well as tokenSuplly
 
-  
+}  
 
 
 
