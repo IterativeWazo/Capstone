@@ -28604,7 +28604,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.20",
-  "updatedAt": "2020-02-22T14:49:26.238Z",
+  "updatedAt": "2020-02-22T14:57:09.610Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {

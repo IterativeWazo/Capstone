@@ -28600,7 +28600,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.20",
-  "updatedAt": "2020-02-22T14:49:26.193Z",
+  "updatedAt": "2020-02-22T14:57:09.568Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
