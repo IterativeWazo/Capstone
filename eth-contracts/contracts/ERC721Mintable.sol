@@ -14,6 +14,12 @@ contract Ownable {
         constructor() public {
             _owner = msg.sender;
         }
+
+        //Testing 
+         function owner() public returns (address){
+          return _owner ;
+         }
+         
     //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
         modifier onlyOwner{
            require(msg.sender == _owner, "Only owner is able to call Ownable contract");
@@ -23,7 +29,8 @@ contract Ownable {
     //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)
           event transferredOwnership(address newOwner);
 
-    function transferOwnership(address newOwner) public onlyOwner {
+    function transferOwnership(address newOwner) public onlyOwner
+       {
         // TODO add functionality to transfer control of the contract to a newOwner.
         // make sure the new owner is a real address
         require(newOwner != address(0), "ERC721Mintable  - transferOwnerShip - Not owner address");
