@@ -26,7 +26,7 @@ Install Zokrates
 Code & Test Contracts
  ```
  truffle test './test/TestERC721Mintable.js'
- truffle test './test/TestSquareVerifier.js'
+ truffle test './test/TestVerifier.js'
  truffle test './test/TestSolnSquareVerifier.js'
  ``` 
 
