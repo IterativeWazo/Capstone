@@ -27,7 +27,7 @@ Code & Test Contracts
  ```
  truffle test './test/TestERC721Mintable.js'
  truffle test './test/TestVerifier.js'
- truffle test './test/TestSolnSquareVerifier.js'
+ truffle test './test/TestVerifier.js'
  ``` 
 
 Compile and Deploy 
